@@ -17,6 +17,23 @@ This is Full Stack Movie-Liting-App.
 - Login and Signup
 - Accessible online anytime, anywhere.
 
+
+#### Movies Data
+
+```
+  GET https://clean-yak-pea-coat.cyclic.app/movie
+  POST https://clean-yak-pea-coat.cyclic.app/movie/add
+  PATCH https://clean-yak-pea-coat.cyclic.app/movie/update/:id
+  DELETE https://clean-yak-pea-coat.cyclic.app/movie/delete/:id
+```
+
+#### User Data
+
+```
+  POST https://clean-yak-pea-coat.cyclic.app/user/register
+  POST https://clean-yak-pea-coat.cyclic.app/user/login
+```
+
 ## Authors
 [Jahir Pendhari](https://github.com/JahirPendhari09)
 
