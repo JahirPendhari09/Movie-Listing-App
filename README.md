@@ -2,7 +2,10 @@
 
 This is Full Stack Movie-Liting-App.
 
-**Vecel :**  [Movie-Listing-App](https://bespoke-mooncake-4944ff.netlify.app/)
+**Deployed:**  [Movie-Listing-App](https://bespoke-mooncake-4944ff.netlify.app/)
+
+**Cyclic:**  [Movie-Listing-App](https://clean-yak-pea-coat.cyclic.app/) 
+
 ## Tech Stack
 
 **Front-End:** React | Javacsript | HTML | CSS | styled-components
