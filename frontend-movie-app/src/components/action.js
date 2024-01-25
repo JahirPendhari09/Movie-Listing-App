@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const deleteMovie =(id)=>{
-    axios.delete(`http://localhost:8080/movie/delete/${id}`)
+    axios.delete(`https://clean-yak-pea-coat.cyclic.app/movie/delete/${id}`)
     .then(res=>{
        fetchData();
     }).catch(err=>{
@@ -10,7 +10,7 @@ export const deleteMovie =(id)=>{
 }
 
 export const postMovie =(movie)=>{
-    axios.post(`http://localhost:8080/movie/add`,movie)
+    axios.post(`https://clean-yak-pea-coat.cyclic.app/movie/add`,movie)
     .then(res=>{
        fetchData();
     }).catch(err=>{
@@ -19,7 +19,7 @@ export const postMovie =(movie)=>{
 }
 
 export const fetchData =()=>{
-    return (axios.get("http://localhost:8080/movie")
+    return (axios.get("https://clean-yak-pea-coat.cyclic.app/movie")
     .then(res=>{
         // console.log(res)
         return res.data
@@ -31,7 +31,7 @@ export const fetchData =()=>{
 
 
 export const login =(user)=>{
-    axios.post(`http://localhost:8080/user/login`,user)
+    axios.post(`https://clean-yak-pea-coat.cyclic.app/user/login`,user)
     .then(res=>{
         alert("login up success")
         window.location.href="/"
@@ -41,7 +41,7 @@ export const login =(user)=>{
     })
 }
 export const signup =(user)=>{
-    axios.post(`http://localhost:8080/user/register`,user)
+    axios.post(`https://clean-yak-pea-coat.cyclic.app/user/register`,user)
     .then(res=>{
         alert("Sign up success")
         window.location.href="/login"
@@ -51,7 +51,7 @@ export const signup =(user)=>{
     })
 }
 export const updateMovie =(id,data)=>{
-    axios.patch(`http://localhost:8080/movie/update/${id}`,data)
+    axios.patch(`https://clean-yak-pea-coat.cyclic.app/movie/update/${id}`,data)
     .then(res=>{
        fetchData();
     }).catch(err=>{
