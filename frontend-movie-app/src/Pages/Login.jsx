@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, Navigate } from "react-router-dom"
 import styled from "styled-components"
+import { login } from "../components/action";
 
 const Login = () => {
     const emailRef = useRef(null);
@@ -10,6 +11,12 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         
+        const user ={
+            email:emailRef.current.value,
+            password:passwordRef.current.value
+        }
+
+        login(user)
     };
  
     return <>
